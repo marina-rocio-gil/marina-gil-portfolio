@@ -5,3 +5,8 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+/* Footer */
+.footer_icon {
+    width: 2em;
+}
