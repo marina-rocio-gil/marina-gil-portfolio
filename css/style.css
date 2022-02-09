@@ -463,8 +463,8 @@ body {
     }
 }    
 
-/* MEDIA QUERY 360px */
-@media screen and (max-width: 360px) {
+/* MEDIA QUERY 500px */
+@media screen and (max-width: 500px) {
     /* Header */
     .title {
         font-size: 2em;
