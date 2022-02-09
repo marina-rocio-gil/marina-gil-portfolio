@@ -4,6 +4,7 @@
 /* Globals */
 :root {
     --color-primary: #F12170;
+    --color-secondary: #6635d8;
     --color-title: #000;
     --align-title: left;
     --padding-container: 6em 0;
@@ -23,7 +24,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #d5eff3;
     opacity: 1;
-    background-image:  radial-gradient(#fff 0.75px, transparent 0.75px), radial-gradient(#fff 0.75px, #d5eff3 0.75px);
+    background-image: radial-gradient(#fff 0.75px, transparent 0.75px), radial-gradient(#fff 0.75px, #d5eff3 0.75px);
     background-size: 30px 30px;
     background-position: 0 0,15px 15px; 
 }
@@ -74,7 +75,7 @@ body {
     margin: 1.3em 0;
 }
 
-.hero_btn {
+.button {
     display: inline-block;
     background-color: var(--color-btn);
     color: var(--text-btn);
@@ -86,9 +87,15 @@ body {
     font-size: 1.1em;
 }
 
+.button:hover {
+    background: #fff;
+    color: var(--color-primary);
+    box-shadow: 0px 0px 0px 3px #F12170 inset;
+}
+
 .hero_img {
     width: 95%;
-    border: 3px solid #485696;
+    border: 2px solid var(--color-secondary);
     border-radius: 50%;
 }
 
@@ -107,9 +114,141 @@ body {
     content:'';
     display: block;
     width: 100px;
+    margin-top: 10px;
+    height: 5px;
+    background: var(--color-secondary);
+}
+
+/* Marina */
+.marina {
+    text-align: center;
+    border-bottom: 2px solid #9BA7C0;
+    --padding-container: 20px 0 60px;
+}
+
+.marina_container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.marina_name {
+    margin: 20px 0;
+}
+
+.marina_tag {
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+}
+
+.marina_paragraph {
+    text-align: left;
+    line-height: 1.5;
+    color: #474647;
+}
+
+.marina_img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* About */
+.about {
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    place-items: center;
+}
+
+.about_portfolio {
+    width: 90%;
+}
+
+.about_paragraph {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.about_picture {
+    text-align: center;
+}
+
+.about_img {
+    width: 95%;
+}
+
+/* Cards */
+.cards {
+    background: #f3f0f0;
+}
+
+.card_copy {
     margin-top: 20px;
-    height: 4px;
-    background: var(--color-primary);
+}
+
+.card_container {
+    width: 99%;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+    grid-template-areas: 
+    ".      card1 .    "
+    "card2  card1 card3"
+    "card2  card4 card3"
+    ".      card4 .    ";
+}
+
+.card_item {
+    padding: 20px;
+    background: #fff;
+    border-top: 5px solid var(--color-secondary);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card_img {
+    background: var(--color-secondary);
+    margin-top: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_title {
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+.card_paragraph {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.card_item:nth-last-of-type(1) {
+    grid-area: card1;
+}
+
+.card_item:nth-last-of-type(2) {
+    grid-area: card2;
+}
+
+.card_item:nth-last-of-type(3) {
+    grid-area: card3;
+}
+
+.card_item:nth-last-of-type(4) {
+    grid-area: card4;
 }
 
 /* Footer */
