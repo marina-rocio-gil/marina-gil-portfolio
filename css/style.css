@@ -251,7 +251,107 @@ body {
     grid-area: card4;
 }
 
-/* Footer */
-.footer_icon {
-    width: 2em;
+/* Cursos */
+.cursos {
+    --color-title: #fff;
+    --color-btn: #fff;
+    --text-btn: var(--color-primary);
+    color: var(--color-title);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    /* align-items: center; */
 }
+
+.cursos_about {
+    width: 97%;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    align-self: center;
+    background: var(--color-primary);
+    grid-column: 1/4;
+    grid-row: 2/-2;
+}
+
+.cursos_picture {
+    margin: 0;
+    grid-column: 3/-1;
+    grid-row: 1/-1;
+}
+
+.cursos_img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.cursos_picture-right {
+    grid-column: 1/4;
+}
+
+.cursos_about-left {
+    grid-column: 3/-1;
+}
+
+/* Footer */
+.footer {
+    position: relative;
+    --padding-container: 160px 0 50px;
+}
+
+.footer::before {
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.footer_contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    place-items: center;
+    margin-bottom: 30px;
+}
+
+.footer_copy {
+    margin: 20px 0;
+}
+
+.footer_socials {
+    display: flex;
+    padding-top: 15px;
+}
+
+.footer_link {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_icon {
+    width: 60%;
+}
+
+.footer_picture {
+    margin: 0;
+}
+
+.footer_img {
+    width: 90%;
+}
+
+.footer_copyright {
+    
+}
+
