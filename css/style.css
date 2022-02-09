@@ -41,7 +41,7 @@ body {
 .hero {
     position: relative;
     height: 100vh;
-    min-width: 500px;
+    min-height: 500px;
     --padding-container: 0;
 }
 
@@ -352,6 +352,114 @@ body {
 }
 
 .footer_copyright {
-    
+    padding-top: 15px;
+    border-top: 2px solid #9BA7C0;
+    text-align: center;
 }
 
+/* MEDIA QUERY 768px */
+@media screen and (max-width: 768px) {
+    /* Header */
+    :root {
+        --height-bg-shape: 14em;
+    }
+
+    .hero_container {
+        --padding-container: 20px 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+        
+    }
+
+    .hero_img {
+        width: 60%;
+        order: -1;
+    }
+
+    .hero_title {
+        font-size: 3.8em;
+    }
+
+    .hero_copy {
+        margin: 15px;
+        padding: 0;
+    }
+
+    /* Marina */
+    .marina {
+        padding: 35px 0;
+    }
+
+    /* About */
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        gap: 50px;
+    }
+
+    .about_portfolio {
+        width: 100%;
+    }
+
+    .about_picture {
+        order: -1;
+    }
+
+    .about_img {
+        width: 100%;
+    }
+
+    /* Cards */
+    .card_container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+        "card1      ."
+        "card1  card2"
+        "card3  card2"
+        "card3  card4"
+        ".      card4";
+    }
+
+    /* Cursos */
+    .cursos {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .cursos_about {
+        grid-column: 1/6;
+    }
+    
+    .cursos_about-left {
+        grid-column: 2/-1;
+    }
+
+    .cursos_picture {
+        grid-column: 2/-1;
+        grid-row: 1/6;
+    }
+
+    /* Footer */
+    .footer_contact {
+        grid-template-columns: 1fr;
+    }
+
+    .footer_text {
+        order: 1;
+        --align-title: center;
+        text-align: center;
+    }
+
+    .footer_img {
+        width: 100%;
+    }
+
+    .footer_socials {
+        justify-content: space-evenly;
+    }
+}    
+
+/* MEDIA QUERY 360px */
+@media screen and (max-width: 360px) {
+
+}
