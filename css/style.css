@@ -293,13 +293,13 @@ body {
     grid-column: 3/-1;
 }
 
-/* Footer */
-.footer {
+/* Contact */
+.contact {
     position: relative;
     --padding-container: 160px 0 50px;
 }
 
-.footer::before {
+.contact::before {
     content:'';
     position: absolute;
     width: 100%;
@@ -318,16 +318,16 @@ body {
     margin-bottom: 30px;
 }
 
-.footer_copy {
+.contact_copy {
     margin: 20px 0;
 }
 
-.footer_socials {
+.contact_socials {
     display: flex;
     padding-top: 15px;
 }
 
-.footer_link {
+.contact_link {
     width: 60px;
     height: 60px;
     border: 1px solid #000;
@@ -339,20 +339,21 @@ body {
     align-items: center;
 }
 
-.footer_icon {
+.contact_icon {
     width: 60%;
 }
 
-.footer_picture {
+.contact_picture {
     margin: 0;
 }
 
-.footer_img {
+.contact_img {
     width: 90%;
 }
 
+/* Footer */
 .footer_copyright {
-    padding-top: 15px;
+    padding: 15px;
     border-top: 2px solid #9BA7C0;
     text-align: center;
 }
