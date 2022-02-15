@@ -1,0 +1,30 @@
+@import '../base/variables';
+
+/* About portfolio */
+.about {
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    place-items: center;
+}
+
+.about_portfolio {
+    width: 90%;
+}
+
+.about_paragraph {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.about_picture {
+    text-align: center;
+}
+
+.about_img {
+    width: 95%;
+
+    &:hover {
+        filter: grayscale(100%);
+    }
+}
