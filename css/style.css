@@ -252,7 +252,7 @@ body {
 }
 
 /* Cursos */
-.cursos {
+.servicios {
     --color-title: #fff;
     --color-btn: #fff;
     --text-btn: var(--color-primary);
@@ -263,7 +263,7 @@ body {
     /* align-items: center; */
 }
 
-.cursos_about {
+.servicios_about {
     width: 97%;
     margin: 0 auto;
     padding: 30px;
@@ -274,22 +274,22 @@ body {
     grid-row: 2/-2;
 }
 
-.cursos_picture {
+.servicios_picture {
     margin: 0;
     grid-column: 3/-1;
     grid-row: 1/-1;
 }
 
-.cursos_img {
+.servicios_img {
     width: 100%;
     object-fit: cover;
 }
 
-.cursos_picture-right {
+.servicios_picture-right {
     grid-column: 1/4;
 }
 
-.cursos_about-left {
+.servicios_about-left {
     grid-column: 3/-1;
 }
 
@@ -297,6 +297,7 @@ body {
 .contact {
     position: relative;
     --padding-container: 160px 0 50px;
+    background: ;
 }
 
 .contact::before {
@@ -310,7 +311,7 @@ body {
     clip-path: polygon(0 0, 100% 0, 50% 100%);
 }
 
-.footer_contact {
+.contact_info {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
