@@ -264,7 +264,6 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    /* align-items: center; */
 }
 
 .servicios_about {
@@ -436,7 +435,7 @@ body {
         ".      card4";
     }
 
-    /* Cursos */
+    /* Servicios */
     .servicios {
         grid-template-columns: repeat(6, 1fr);
     }

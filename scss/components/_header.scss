@@ -5,19 +5,19 @@
     position: relative;
     height: 100vh;
     min-height: 500px;
-    --padding-container: 0;
+    $padding-container: 0;
 
-    &::after {
-        content:'';
-        display: block;
-        position: absolute;
-        height: var(--height-bg-shape);
-        width: 100%;
-        left: 0;
-        bottom: 0;
-        background: #fff;
-        z-index: -1;
-        clip-path: polygon(0 100%, 100% 100%, 100% 0);
+        &::after {
+            content:'';
+            display: block;
+            position: absolute;
+            height: $height-bg-shape;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            background: #fff;
+            z-index: -1;
+            clip-path: polygon(0 100%, 100% 100%, 100% 0);
     }
 }
 
@@ -40,6 +40,6 @@
 
 .hero_img {
     width: 95%;
-    border: 2px solid var(--color-secondary);
+    border: 2px solid $color-secondary;
     border-radius: 50%;
 }

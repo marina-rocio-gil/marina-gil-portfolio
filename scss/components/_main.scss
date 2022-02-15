@@ -7,8 +7,8 @@
 
 .title {
     font-size: 2.5em;
-    text-align: var(--align-title);
-    color: var(--color-title);
+    text-align: $align-title;
+    color: $color-title;
 }
 
 .title_border::after {
@@ -17,5 +17,5 @@
     width: 100px;
     margin-top: 10px;
     height: 5px;
-    background: var(--color-secondary);
+    background: $color-secondary;
 }

@@ -13,9 +13,9 @@ body {
 }
 
 .container {
-    width: var(--width-container);
-    max-width: var(--max-width-container);
+    width: $width-container;
+    max-width: $max-width-container;
     margin: 0 auto;
-    padding: var(--padding-container);
+    padding: $padding-container;
     overflow: hidden;
 }

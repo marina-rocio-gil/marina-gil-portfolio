@@ -3,10 +3,10 @@
 /* Buttons */
 .button {
     display: inline-block;
-    background-color: var(--color-btn);
-    color: var(--text-btn);
-    padding: var(--padding-btn);
-    border-radius: var(--radius-btn);
+    background-color: $color-btn;
+    color: $text-btn;
+    padding: $padding-btn;
+    border-radius: $radius-btn;
     text-align: center;
     text-decoration: none;
     font-weight: 600;
@@ -14,7 +14,7 @@
 
     &:hover {
         background: #fff;
-        color: var(--color-primary);
+        color: $color-primary;
         box-shadow: 0px 0px 0px 3px #F12170 inset;
     }
 }

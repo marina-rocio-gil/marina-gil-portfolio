@@ -5,7 +5,7 @@
 .marina {
     text-align: center;
     border-bottom: 2px solid #9BA7C0;
-    --padding-container: 20px 0 60px;
+    $padding-container: 20px 0 60px;
 }
 
 .marina_container {
@@ -19,7 +19,7 @@
 
 .marina_tag {
     font-weight: 700;
-    color: var(--color-primary);
+    color: $color-primary;
     margin-bottom: 20px;
 }
 
