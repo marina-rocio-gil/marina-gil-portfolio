@@ -155,7 +155,7 @@ body {
     object-position: center;
 }
 
-/* About */
+/* About Portfolio */
 .about {
     display: grid;
     grid-template-columns: 5fr 4fr;
@@ -178,6 +178,10 @@ body {
 
 .about_img {
     width: 95%;
+}
+
+.about_img:hover {
+    filter: grayscale(100%);
 }
 
 /* Cards */
@@ -251,7 +255,7 @@ body {
     grid-area: card4;
 }
 
-/* Cursos */
+/* Servicios */
 .servicios {
     --color-title: #fff;
     --color-btn: #fff;
@@ -291,6 +295,10 @@ body {
 
 .servicios_about-left {
     grid-column: 3/-1;
+}
+
+.servicios_about:hover {
+    transform: scale(1.05);
 }
 
 /* Contact */
