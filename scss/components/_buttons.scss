@@ -1,0 +1,21 @@
+@import '../base/variables';
+@import '../base/globals';
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background-color: var(--color-btn);
+    color: var(--text-btn);
+    padding: var(--padding-btn);
+    border-radius: var(--radius-btn);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+
+    &:hover {
+        background: #fff;
+        color: var(--color-primary);
+        box-shadow: 0px 0px 0px 3px #F12170 inset;
+    }
+}

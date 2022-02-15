@@ -1,0 +1,21 @@
+@import 'variables';
+
+/* Globals */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #d5eff3;
+    opacity: 1;
+    background-image: radial-gradient(#fff 0.75px, transparent 0.75px), radial-gradient(#fff 0.75px, #d5eff3 0.75px);
+    background-size: 30px 30px;
+    background-position: 0 0,15px 15px; 
+}
+
+.container {
+    width: var(--width-container);
+    max-width: var(--max-width-container);
+    margin: 0 auto;
+    padding: var(--padding-container);
+    overflow: hidden;
+}
