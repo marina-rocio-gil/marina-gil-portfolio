@@ -421,6 +421,14 @@ template {
   box-shadow: 0px 0px 0px 3px #F12170 inset;
 }
 
+/* Servicios button */
+.servicios_btn {
+  padding: 0.6em;
+  margin-top: 1em;
+  background-color: #fff;
+  color: #F12170;
+}
+
 /* Main */
 .main {
   background: #fff;
@@ -535,7 +543,7 @@ template {
 }
 
 .card_img {
-  background: var(color-secondary);
+  background: #6635d8;
   margin-top: 20px;
   width: 80px;
   height: 80px;
@@ -573,7 +581,7 @@ template {
 
 /* Servicios */
 .servicios {
-  color: #fff;
+  color: #000;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
@@ -582,7 +590,7 @@ template {
 .servicios_about {
   width: 97%;
   margin: 0 auto;
-  padding: 30px;
+  padding: 10px 30px 30px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   align-self: center;
   background: #F12170;
@@ -591,6 +599,17 @@ template {
 }
 .servicios_about:hover {
   transform: scale(1.05);
+}
+
+.servicios_title {
+  margin: 0.5em;
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.servicios_paragraph {
+  color: #fff;
+  font-weight: 500;
 }
 
 .servicios_picture {

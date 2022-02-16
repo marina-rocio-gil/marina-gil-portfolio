@@ -2,7 +2,7 @@
 
 /* Servicios */
 .servicios {
-    $color-title: #fff;
+    $color: #fff;
     $color-btn: #fff;
     $text-btn: $color-primary;
     color: $color-title;
@@ -14,16 +14,27 @@
 .servicios_about {
     width: 97%;
     margin: 0 auto;
-    padding: 30px;
+    padding: 10px 30px 30px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
     align-self: center;
     background: $color-primary;
     grid-column: 1/4;
     grid-row: 2/-2;
 
-    &:hover {
-        transform: scale(1.05);
-    }
+        &:hover {
+            transform: scale(1.05);
+        }
+}
+
+.servicios_title {
+    margin: 0.5em;
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.servicios_paragraph {
+    color: #fff;
+    font-weight: 500;
 }
 
 .servicios_picture {
